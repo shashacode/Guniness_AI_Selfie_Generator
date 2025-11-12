@@ -3,6 +3,7 @@
 Generate legendary selfies with Messi or Ronaldo while holding a pint of Guinness!
 
 This is a static web application deployed to Netlify and Streamlit server.
+Here is the link to access it: [https://691313e8eed2aafd08c0c996--warm-tiramisu-b14690.netlify.app](https://691313e8eed2aafd08c0c996--warm-tiramisu-b14690.netlify.app)
 
 ## 📖 How to Use
 
