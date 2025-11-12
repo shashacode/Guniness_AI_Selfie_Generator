@@ -2,39 +2,7 @@
 
 Generate legendary selfies with Messi or Ronaldo while holding a pint of Guinness!
 
-This is a static web application that can be deployed to Netlify (or any static hosting service) without any backend server.
-
-## 🚀 Quick Deploy to Netlify
-
-### Option 1: Deploy via Netlify UI (Easiest)
-
-1. **Create a GitHub repository** with these files
-2. **Go to [Netlify](https://app.netlify.com/)**
-3. Click **"Add new site"** → **"Import an existing project"**
-4. Connect your GitHub account
-5. Select your repository
-6. Click **"Deploy site"**
-7. Done! Your site will be live at `https://your-site-name.netlify.app`
-
-### Option 2: Deploy via Netlify Drop
-
-1. **Zip all files** in this folder (index.html, styles.css, app.js, netlify.toml)
-2. Go to [Netlify Drop](https://app.netlify.com/drop)
-3. Drag and drop your zip file
-4. Done! Your site will be live immediately
-
-### Option 3: Deploy via Netlify CLI
-
-```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Login to Netlify
-netlify login
-
-# Deploy
-netlify deploy --prod
-```
+This is a static web application deployed to Netlify and Streamlit server.
 
 ## 📖 How to Use
 
@@ -129,28 +97,6 @@ model: 'google/gemini-2.5-flash-image-preview:free'
 - Check browser localStorage is enabled
 - Try in a different browser
 
-## 🎨 Customization
-
-You can easily customize the app:
-
-### Change Colors
-Edit the CSS variables in `styles.css`:
-```css
-:root {
-    --primary-color: #0F0F23;
-    --secondary-color: #D4AF37;
-    --accent-color: #8B4513;
-}
-```
-
-### Change Model
-Edit the model name in `app.js`:
-```javascript
-model: 'google/gemini-2.5-flash-image-preview'
-```
-
-### Add More Footballers
-Edit the select options in `index.html` and update the logic in `app.js`
 
 ## 📊 Browser Compatibility
 
@@ -168,30 +114,6 @@ Edit the select options in `index.html` and update the logic in `app.js`
 - [OpenRouter Documentation](https://openrouter.ai/docs)
 - [Netlify Documentation](https://docs.netlify.com/)
 
-## 📝 Custom Domain
-
-To use a custom domain on Netlify:
-
-1. Go to your site settings on Netlify
-2. Click "Domain management"
-3. Click "Add custom domain"
-4. Follow the DNS configuration instructions
-
-## 🔄 Updates
-
-To update your deployed site:
-
-1. Make changes to your local files
-2. Commit and push to GitHub (if using GitHub method)
-3. Netlify will automatically rebuild and deploy
-
-Or simply drag and drop the updated files to Netlify Drop.
-
-## 📞 Support
-
-For issues:
-- OpenRouter API issues: [OpenRouter Support](https://openrouter.ai/)
-- Netlify deployment issues: [Netlify Support](https://www.netlify.com/support/)
 
 ## 📄 License
 
