@@ -1,0 +1,23 @@
+{
+  "name": "guinness-selfie-generator",
+  "version": "1.0.0",
+  "description": "Generate legendary selfies with Messi or Ronaldo holding a pint of Guinness",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "guinness",
+    "selfie",
+    "messi",
+    "ronaldo",
+    "ai",
+    "image-generation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

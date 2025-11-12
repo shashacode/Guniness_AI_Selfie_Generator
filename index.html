@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍺 Guinness Selfie Generator - Create Legendary Selfies with Messi & Ronaldo</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Generate legendary selfies with Messi or Ronaldo while holding a pint of Guinness! Free AI-powered image generator using OpenRouter.">
+    <meta name="keywords" content="Guinness, selfie generator, Messi, Ronaldo, AI image generation, OpenRouter, football, soccer">
+    <meta name="author" content="Guinness Selfie Generator">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="🍺 Guinness Selfie Generator">
+    <meta property="og:description" content="Generate legendary selfies with Messi or Ronaldo while holding a pint of Guinness!">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🍺 Guinness Selfie Generator">
+    <meta name="twitter:description" content="Generate legendary selfies with Messi or Ronaldo while holding a pint of Guinness!">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍺</text></svg>">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0F0F23">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🍺 Guinness Selfie Generator</h1>
+            <p class="subtitle">Generate a legendary selfie with Messi or Ronaldo while holding a pint of Guinness! ⚽✨</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h2>⚙️ Configuration</h2>
+                
+                <div class="form-group">
+                    <label for="apiKey">
+                        OpenRouter API Key
+                        <a href="https://openrouter.ai/keys" target="_blank" class="help-link">Get Key</a>
+                    </label>
+                    <input 
+                        type="password" 
+                        id="apiKey" 
+                        placeholder="sk-or-v1-..."
+                        class="input-field"
+                    >
+                    <small class="help-text">Your API key is stored locally and never sent anywhere except OpenRouter</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="footballer">Choose Footballer</label>
+                    <select id="footballer" class="select-field">
+                        <option value="ronaldo">Ronaldo</option>
+                        <option value="messi">Messi</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="style">Choose Style</label>
+                    <select id="style" class="select-field">
+                        <option value="casual">Casual</option>
+                        <option value="photorealistic">Photorealistic</option>
+                        <option value="cinematic">Cinematic</option>
+                        <option value="professional">Professional</option>
+                    </select>
+                </div>
+
+                <div class="info-box">
+                    <h3>📊 Model Info</h3>
+                    <p><strong>Model:</strong> gemini-2.5-flash-image-preview</p>
+                    <p><strong>Endpoint:</strong> OpenRouter API</p>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <div class="upload-section">
+                    <h2>📸 Upload Your Photo</h2>
+                    <div class="upload-box" id="uploadBox">
+                        <input 
+                            type="file" 
+                            id="photoInput" 
+                            accept="image/png,image/jpeg,image/jpg"
+                            style="display: none;"
+                        >
+                        <div class="upload-prompt" id="uploadPrompt">
+                            <div class="upload-icon">📸</div>
+                            <p>Click to upload or drag and drop</p>
+                            <small>PNG, JPG, JPEG (Max 5MB)</small>
+                        </div>
+                        <img id="uploadedImage" class="uploaded-image" style="display: none;">
+                    </div>
+                    <div id="imageInfo" class="image-info" style="display: none;"></div>
+                </div>
+
+                <div class="generate-section">
+                    <button id="generateBtn" class="generate-btn" disabled>
+                        🎨 Generate Selfie
+                    </button>
+                    <div id="progressBar" class="progress-bar" style="display: none;">
+                        <div class="progress-fill"></div>
+                        <p class="progress-text">Generating your legendary selfie... ⏱️</p>
+                    </div>
+                </div>
+
+                <div class="result-section" id="resultSection" style="display: none;">
+                    <h2>✨ Your Legendary Selfie!</h2>
+                    <div class="result-container">
+                        <img id="generatedImage" class="generated-image">
+                        <button id="downloadBtn" class="download-btn">
+                            💾 Download Image
+                        </button>
+                    </div>
+                </div>
+
+                <!-- History Section -->
+                <div id="historySection" class="history-section" style="display: none;">
+                    <h2>📂 Generation History</h2>
+                    <div id="historyGrid" class="history-grid"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ using OpenRouter + Gemini 🍺⚽✨</p>
+            <div class="footer-links">
+                <a href="https://openrouter.ai/keys" target="_blank">Get API Key</a> |
+                <a href="https://openrouter.ai/docs" target="_blank">Docs</a> |
+                <a href="https://openrouter.ai/activity" target="_blank">Usage</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
