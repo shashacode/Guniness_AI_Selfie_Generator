@@ -1,11 +1,11 @@
-# 🍺 Guinness Selfie Generator - Netlify Version
+# Guinness Selfie Generator - Netlify Version
 
 Generate legendary selfies with Messi or Ronaldo while holding a pint of Guinness!
 
 This is a static web application deployed to Netlify and Streamlit server.
 Here is the link to access it: [https://691313e8eed2aafd08c0c996--warm-tiramisu-b14690.netlify.app](https://691313e8eed2aafd08c0c996--warm-tiramisu-b14690.netlify.app)
 
-## 📖 How to Use
+## How to Use
 
 1. **Get OpenRouter API Key**
    - Visit [https://openrouter.ai/keys](https://openrouter.ai/keys)
@@ -25,23 +25,23 @@ Here is the link to access it: [https://691313e8eed2aafd08c0c996--warm-tiramisu-
 
 ## ⚙️ Features
 
-- ✨ Generate selfies with Messi, Ronaldo, or both
-- 🎨 Multiple style options
-- 📸 Drag & drop or click to upload
-- 💾 Download generated images
-- 📂 View generation history (last 6 generations)
-- 🔒 API key stored securely in browser localStorage
-- 📱 Fully responsive design
-- 🚀 No backend required - runs entirely in the browser
+-  Generate selfies with Messi, Ronaldo, or both
+-  Multiple style options
+-  Drag & drop or click to upload
+-  Download generated images
+-  View generation history (last 6 generations)
+-  API key stored securely in browser localStorage
+-  Fully responsive design
+-  No backend required - runs entirely in the browser
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Frontend**: Pure HTML, CSS, JavaScript (Vanilla JS)
 - **AI Model**: Google Gemini 2.5 Flash Image Preview (via OpenRouter)
 - **Hosting**: Netlify (or any static hosting)
 - **API**: OpenRouter
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 netlify-version/
@@ -52,7 +52,7 @@ netlify-version/
 └── README.md       # This file
 ```
 
-## 🔐 Security & Privacy
+##  Security & Privacy
 
 - ✅ API keys are stored locally in your browser (localStorage)
 - ✅ API keys are never sent anywhere except directly to OpenRouter
@@ -60,7 +60,7 @@ netlify-version/
 - ✅ No backend server means no data storage on our end
 - ✅ History is stored locally in your browser
 
-## 💰 Costs
+##  Costs
 
 The app uses OpenRouter's API to access Google's Gemini model:
 
@@ -73,7 +73,7 @@ To use the free tier, you can modify the model name in `app.js`:
 model: 'google/gemini-2.5-flash-image-preview:free'
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### "API Error: 401"
 - Your API key is invalid or expired
@@ -101,13 +101,13 @@ model: 'google/gemini-2.5-flash-image-preview:free'
 
 ## 📊 Browser Compatibility
 
-- ✅ Chrome (recommended)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Mobile browsers
+-  Chrome (recommended)
+-  Firefox
+-  Safari
+-  Edge
+-  Mobile browsers
 
-## 🔗 Useful Links
+## Useful Links
 
 - [OpenRouter Dashboard](https://openrouter.ai/)
 - [API Keys](https://openrouter.ai/keys)
@@ -116,12 +116,12 @@ model: 'google/gemini-2.5-flash-image-preview:free'
 - [Netlify Documentation](https://docs.netlify.com/)
 
 
-## 📄 License
+##  License
 
 This project is for educational and entertainment purposes.
 
 ---
 
-Made with ❤️ using OpenRouter + Gemini 🍺⚽✨
+Powered by OpenRouter + Gemini 
 
-Deployed on Netlify 🚀
+Deployed on Netlify 
